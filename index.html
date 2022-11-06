@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W10 - Color &amp; Accessibility</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;500;700;800&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="container">
+      <a href="/" class="logo">
+        <h1>Color &amp; Accessibility</h1>
+      </a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Nav Item</a></li>
+          <li><a href="#">Nav Item</a></li>
+          <li><a href="#">Nav Item</a></li>
+          <li><a class="btn btn-accent" href="https://mad9013.github.io/F2021/modules/week9/" target="_blank">Learn More</a></li>
+        </ul>
+      </nav>
+      <a class="nav-toggle" href="#nav">
+        <span class="tog top"></span>
+        <span class="tog middle"></span>
+        <span class="tog bottom"></span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="banner hero">
+      <div class="banner-content">
+        <h2>Color Schemes &amp; Accessibility</h2>
+        <p>Its important to make sure your websites follow accessibility guidelines to make sure every user can use your website!</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="container gutter">
+        <h2>Resources</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <img src="./images/card-ui.jpg" alt="">
+            <div class="card-content">
+              <h3>Color Usage in UI Design</h3>
+              <p>Some helpful tips for using colour in UI Design.</p>
+              <a class="btn btn-secondary" href="https://uxdesign.cc/10-principles-for-color-usage-in-ui-design-65174b213004">Learn More</a>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-checklist.jpg" alt="">
+            <div class="card-content">
+              <h3>Accessibility Checklist</h3>
+              <p>A handy reference for key accessibility requirements.</p>
+              <a class="btn btn-secondary" href="https://learn-the-web.algonquindesign.ca/topics/accessibility-checklist/">Learn More</a>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-docs.jpg" alt="">
+            <div class="card-content">
+              <h3>MDN Accessibility Documentation</h3>
+              <p>Mozilla's documentation for a wide range of accessibility learning.</p>
+              <a class="btn btn-secondary" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Learn More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container gutter">
+        <h2 class="psuh-4">Frequently Asked Questions</h2>
+        <div id="accordionGroup" class="accordion">
+          <h3 class="accordion-label">
+            <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect1" id="accordion1id">
+              <span class="accordion-title">
+                Is accessibility really that important?
+                <span class="accordion-icon"></span>
+              </span>
+            </button>
+          </h3>
+          <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden="">
+            <p>Yes! Accessibility makes sure that everyone who visits your website will be able to use it effectively. This improves user experience, treats every user equally, and goes a long way to user retention.</p>
+            <p>It is also the law! The Government of Ontario (and many others) require base level of web accessibility for all websites for private businesses and not-for-profits with 50+ employees and all public sector organizations. Learn more on the <a href="https://www.ontario.ca/page/how-make-websites-accessible">ontario.ca</a> website.</p>
+          </div>
+          <h3 class="accordion-label">
+            <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id">
+              <span class="accordion-title">
+                Where can I find a list of all the ARIA attributes?
+                <span class="accordion-icon"></span>
+              </span>
+            </button>
+          </h3>
+          <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+            <p><a href="https://w3.org">w3.org</a> is the place to go for all things accessibility, check out their <a href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties">list of ARIA attributes</a> on this page at 6.4 Global States and Properties.</p>
+          </div>
+          <h3 class="accordion-label">
+            <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id">
+              <span class="accordion-title">
+                Where can I find those sweet accessibility extensions?
+                <span class="accordion-icon"></span>
+              </span>
+            </button>
+          </h3>
+          <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+            <ul>
+              <li><a href="https://wave.webaim.org/extension/">WAVE Web Accessibility Evaluation Tool</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Web Developer Extension Chrome</a></li>
+              <li><a href="https://addons.mozilla.org/en-CA/firefox/addon/web-developer/">Web Developer Extension Firefox</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="banner callout">
+      <div class="banner-content gutter">
+        <h2>Good accessibility is good design</h2>
+        <p>It doesn't matter how good your design or code may seem, if it isn't accessible, you haven't done your job!</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container gutter">
+      <small>Created for <a href="https://mad9013.github.io/F2021/">MAD9013 course</a> and free for any use.</small>
+      <a class="btn btn-accent" href="https://mad9013.github.io/F2021/modules/week10/" target="_blank">Week 10 Content</a>
+    </div>
+  </footer>
+  <div class="click-to-close"></div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
